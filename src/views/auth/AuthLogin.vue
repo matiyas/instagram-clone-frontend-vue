@@ -1,7 +1,5 @@
 <template>
-  <b-row>
-    AuthLogin
-  </b-row>
+  <div></div>
 </template>
 
 <style lang="scss" scoped></style>

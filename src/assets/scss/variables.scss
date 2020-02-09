@@ -1,0 +1,10 @@
+@function get_spacer($n) {
+  @return nth(nth($spacers, $n), 2);
+}
+
+// Spacers
+$space-1: get_spacer(1);
+$space-2: get_spacer(2);
+$space-3: get_spacer(3);
+$space-4: get_spacer(4);
+$space-5: get_spacer(5);

@@ -1,3 +1,5 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
 @function get_spacer($n) {
   @return nth(nth($spacers, $n), 2);
 }
@@ -8,3 +10,11 @@ $space-2: get_spacer(2);
 $space-3: get_spacer(3);
 $space-4: get_spacer(4);
 $space-5: get_spacer(5);
+
+// Font sizes
+$font-size-md: 1rem;    // 14px
+$font-size-sm: .81rem;  // 13px
+
+// Color variables
+$navy-blue-color: rgb(0, 53, 105);
+$grey-color: rgb(153, 153, 153);

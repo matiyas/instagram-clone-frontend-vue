@@ -7,6 +7,11 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: '',
+    name: 'root_path',
+    redirect: { name: 'auth_login_path' }
+  },
+  {
     path: '/auth',
     component: Auth,
     children: [

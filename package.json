@@ -35,6 +35,7 @@
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
+    "vue-lodash": "^2.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }

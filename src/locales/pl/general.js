@@ -1,1 +1,4 @@
-export default {};
+export default {
+  logIn: 'Zaloguj się',
+  or: 'lub'
+};

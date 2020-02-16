@@ -5,9 +5,12 @@
       <b-icon icon="chevron-down" variant="dark" class="ml-1 arrow" />
     </div>
     <select v-model="$i18n.locale">
-      <option v-for="locale in sortedLocalesNames" :key="locale">
-        {{ getLocaleName(locale) }}
-      </option>
+      <option
+        v-for="locale in $i18n.availableLocales.sort()"
+        :key="locale"
+        :value="locale"
+        >{{ getLocaleName(locale) }}</option
+      >
     </select>
   </div>
 </template>
@@ -22,13 +25,6 @@ export default {
         pl: 'Polski'
       }
     };
-  },
-  computed: {
-    sortedLocalesNames() {
-      return this.$i18n.availableLocales
-        .map(locale => this.getLocaleName(locale))
-        .sort();
-    }
   },
   methods: {
     getLocaleName(locale) {
@@ -54,9 +50,9 @@ select,
   line-height: 100%;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: $font-size-sm;
+  font-size: $ic-font-size-sm;
   font-family: Arial, Helvetica, sans-serif;
-  color: $navy-blue-color;
+  color: $ic-navy-blue-color;
 }
 select {
   opacity: 0;

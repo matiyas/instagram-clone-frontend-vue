@@ -16,7 +16,7 @@ Vue.use(VueLodash);
 Vue.config.productionTip = false;
 
 const i18n = new VueI18n({
-  locale: 'en',
+  locale: 'pl',
   messages
 });
 

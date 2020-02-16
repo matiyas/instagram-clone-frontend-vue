@@ -10,10 +10,7 @@ import IcLocaleSelect from '@/components/IcLocaleSelect';
 
 export default {
   name: 'IcAuthNavbar',
-  components: { IcLocaleSelect },
-  mounted() {
-    console.log(this.$i18n);
-  }
+  components: { IcLocaleSelect }
 };
 </script>
 

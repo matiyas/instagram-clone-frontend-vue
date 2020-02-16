@@ -1,20 +1,27 @@
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-
-@function get_spacer($n) {
-  @return nth(nth($spacers, $n), 2);
-}
+// Bootstrap overwritten variables
+$primary: rgb(56, 151, 240);
 
 // Spacers
-$space-1: get_spacer(1);
-$space-2: get_spacer(2);
-$space-3: get_spacer(3);
-$space-4: get_spacer(4);
-$space-5: get_spacer(5);
+$ic-space-1: 1rem * 0.25;
+$ic-space-2: 1rem * 0.5;
+$ic-space-3: 1rem;
+$ic-space-4: 1rem * 1.5;
+$ic-space-5: 1rem * 3;
 
 // Font sizes
-$font-size-md: 1rem;    // 14px
-$font-size-sm: .81rem;  // 13px
+$ic-font-size-md: 1rem; // 14px
+$ic-font-size-sm: 0.81rem; // ~13px
+$ic-font-size-xs: 0.76rem; // ~12px
 
 // Color variables
-$navy-blue-color: rgb(0, 53, 105);
-$grey-color: rgb(153, 153, 153);
+$ic-navy-blue-color: rgb(0, 53, 105);
+$ic-grey-color: rgb(153, 153, 153);
+$ic-the-lightest-grey-color: rgb(219, 219, 219);
+$ic-snow-color: rgb(250, 250, 250);
+
+// Elements sizes
+$ic-auth-footer-height: 60px;
+
+@import 'node_modules/bootstrap/scss/_functions.scss';
+@import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';

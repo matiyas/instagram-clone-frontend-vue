@@ -1,5 +1,3 @@
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/bootstrap-vue/src/index.scss';
 @import './variables.scss';
 
 @font-face {
@@ -9,12 +7,36 @@
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
   font-size: 14px;
+}
+
+.btn {
+  font-weight: 600;
 }
 
 .ic-app-logo {
   font-family: Lobster;
   width: fit-content;
-  margin: $space-5 auto $space-3;
+  margin: $ic-space-4 auto !important;
+}
+
+.ic-auth-container {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - #{$ic-auth-footer-height});
+  @include media-breakpoint-up(sm) {
+    align-items: center;
+  }
+}
+
+.ic-auth-box {
+  text-align: center;
+  padding: 10px 25px;
+  height: fit-content;
+  @include media-breakpoint-up(sm) {
+    width: 350px;
+    border: 1px solid $ic-the-lightest-grey-color;
+  }
 }
